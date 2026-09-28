@@ -54,10 +54,12 @@
 
   <h2>2. Information we collect</h2>
   <p>
-    NoomiClone does not require you to create an account, and we do not ask you for your name,
-    email address, or other directly identifying details to play. The information involved is
-    collected automatically by the Game and by the third-party services listed in Section 6,
-    primarily to display ads, process purchases, and keep the Game working.
+    NoomiClone does not require you to create an account or sign in, and you do not need to give us
+    your name, email address, or other directly identifying details to play. Starting with version 2.3.0,
+    you can choose to sign in to back up your progress. If you do, Unity gives the Game a player ID and
+    your account’s email address, as described in Section 2(d). Apart from optional sign-in, the
+    information involved is collected automatically by the Game and by the third-party services listed
+    in Section 6, primarily to display ads, process purchases, and keep the Game working.
   </p>
 
   <h3>a) Information collected automatically</h3>
@@ -84,10 +86,54 @@
   <h3>c) Information stored on your device</h3>
   <p>
     Your settings and game progress are stored locally on your device (using the platform’s standard
-    on-device storage). This information stays on your device and is not transmitted to us.
+    on-device storage). Your settings stay on your device and are not transmitted to us, whether or not
+    you sign in. If you don’t sign in, your game progress also stays on your device and is not
+    transmitted to us. If you sign in, parts of your progress and your purchase records are also backed
+    up to Unity Cloud Save, as described in Section 2(d).
   </p>
 
-  <h3>d) If you contact us</h3>
+  <h3>d) Optional sign-in and cloud backup</h3>
+  <p>
+    Sign-in is available from version 2.3.0, in Settings &gt; Account. It is optional: if you don’t
+    sign in, nothing changes for you.
+  </p>
+  <ul>
+    <li><strong>How sign-in works</strong> — Sign-in uses Unity Player Accounts. Unity’s sign-in page
+        opens in your browser, where you sign in with an email address and password, or with Google or
+        Apple. Unity handles your sign-in credentials; the Game never sees your password.</li>
+    <li><strong>What the Game receives</strong> — Unity gives the Game a player ID and your account’s
+        email address. The Game shows your email address in masked form (for example,
+        “ja***@example.com”), stores only that masked form on your device, and never sends your email
+        address anywhere.</li>
+    <li><strong>What is backed up</strong> — Your regrabs, NoomiCoins balance, HQ replay credits, and
+        owned items and purchase records (including Remove Ads) are backed up to Unity Cloud Save under
+        your player ID.</li>
+    <li><strong>What stays on your device</strong> — Your settings, equipped skins, button layout, and
+        language are not backed up and stay on your device only. The masked email address and the time
+        of your last backup also stay on your device only. Your player ID is stored on your device too
+        (Unity also has it, because your backup is stored under it).</li>
+    <li><strong>Signing out</strong> — Signing out disconnects your account from the Game. It does not
+        delete your cloud backup, and your progress stays on your device.</li>
+    <li><strong>Deleting your data</strong> — To delete your cloud backup or your Unity account, or to
+        ask for a copy of your data, see Section 8.</li>
+  </ul>
+  <p>
+    Unity provides sign-in and cloud backup through Unity Player Accounts, Unity Authentication, and
+    Unity Cloud Save. According to Unity, it collects the following information for these services and
+    processes it under
+    <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener" target="_blank">Unity’s privacy policy</a>:
+  </p>
+  <ul>
+    <li><strong>Linked to you</strong> — email address, other contact information, user ID, approximate
+        location, customer-support information, and other usage data.</li>
+    <li><strong>Not linked to you</strong> — crash data.</li>
+  </ul>
+  <p>
+    Unity says it uses this information to provide these services and, for some of it, for analytics,
+    and that none of it is used for tracking.
+  </p>
+
+  <h3>e) If you contact us</h3>
   <p>
     If you email us, we will receive your email address and the contents of your message, which we
     use only to respond to you.
@@ -99,6 +145,8 @@
     <li>To display advertising, including, where permitted, personalized advertising, and to measure
         its effectiveness.</li>
     <li>To process and validate in-app purchases and prevent fraud.</li>
+    <li>If you choose to sign in, to back up your progress and purchase records so they are not lost
+        if you reinstall the Game.</li>
     <li>To diagnose technical issues and crashes.</li>
     <li>To comply with legal obligations and enforce our terms.</li>
   </ul>
@@ -129,8 +177,8 @@
   <ul>
     <li><strong>Consent</strong> — for personalized advertising and use of advertising identifiers
         where consent is required. You may withdraw consent at any time.</li>
-    <li><strong>Performance of a contract</strong> — to provide the Game and process your in-app
-        purchases.</li>
+    <li><strong>Performance of a contract</strong> — to provide the Game, process your in-app
+        purchases, and, if you choose to sign in, back up your progress and purchase records.</li>
     <li><strong>Legitimate interests</strong> — to operate, secure, and improve the Game, serve
         non-personalized ads, and prevent fraud, balanced against your rights.</li>
     <li><strong>Legal obligation</strong> — to comply with applicable law.</li>
@@ -147,8 +195,8 @@
     </thead>
     <tbody>
       <tr>
-        <td>Unity Technologies (Unity LevelPlay / ironSource mediation, Unity Ads, Unity in-app purchasing)</td>
-        <td>Ad mediation, ad serving, purchase processing</td>
+        <td>Unity Technologies (Unity LevelPlay / ironSource mediation, Unity Ads, Unity in-app purchasing, Unity Player Accounts, Unity Authentication, Unity Cloud Save)</td>
+        <td>Ad mediation, ad serving, purchase processing, optional sign-in and cloud backup</td>
         <td>
           <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener" target="_blank">unity.com</a>,
           <a href="https://www.is.com/privacy-policy/" rel="noopener" target="_blank">is.com (ironSource)</a>
@@ -184,6 +232,12 @@
     according to their own retention policies. Information stored locally on your device remains until
     you delete it or uninstall the Game.
   </p>
+  <p>
+    If you sign in, your cloud backup is kept until you delete it or ask us to delete it (see
+    Section 8). Signing out or uninstalling the Game does not delete it, because its purpose is to keep
+    your progress if you reinstall the Game. Your Unity account, and the information Unity collects for
+    sign-in and cloud backup (see Section 2(d)), are kept according to Unity’s privacy policy.
+  </p>
 
   <h2>8. Your privacy rights</h2>
   <h3>EEA, UK, and Switzerland</h3>
@@ -202,13 +256,32 @@
     advertising consent through the in-app consent options (where shown) and your device’s ad and
     tracking settings.
   </p>
+  <h3>Sign-in and cloud backup</h3>
+  <p>If you signed in (see Section 2(d)):</p>
+  <ul>
+    <li><strong>Deleting your game account</strong> — In the Game, go to Settings &gt; Account and tap
+        “Delete game account”. This deletes your cloud backup and the Game’s player record at Unity,
+        then signs you out. Your progress stays on your device. You can also ask us to delete them by
+        emailing <a href="mailto:Noomiclonedev@gmail.com">Noomiclonedev@gmail.com</a>.</li>
+    <li><strong>Getting a copy of your game data</strong> — To ask for a copy of your cloud backup or
+        other information we hold about you, email us at
+        <a href="mailto:Noomiclonedev@gmail.com">Noomiclonedev@gmail.com</a>.</li>
+    <li><strong>Deleting your Unity account</strong> — Your Unity account works across games, so
+        deleting your game account does not delete it. You can delete your Unity account at
+        <a href="https://player-account.unity.com/delete-account" rel="noopener" target="_blank">player-account.unity.com/delete-account</a>.
+        The Game also links to this page.</li>
+    <li><strong>Other Unity account requests</strong> — To ask Unity for a copy of your Unity account
+        data, or for any other request about your Unity account, email Unity at
+        <a href="mailto:unity-player-login-privacy@unity3d.com">unity-player-login-privacy@unity3d.com</a>.</li>
+  </ul>
 
   <h2>9. International data transfers</h2>
   <p>
     We and our service providers are located in, or transfer data to, countries that may have
-    different data-protection laws than your own, including the United States. Where required, our
-    partners rely on appropriate safeguards (such as the European Commission’s Standard Contractual
-    Clauses) for such transfers.
+    different data-protection laws than your own, including the United States. The same applies to the
+    information involved in optional sign-in and cloud backup, which Unity processes. Where required,
+    our partners rely on appropriate safeguards (such as the European Commission’s Standard
+    Contractual Clauses) for such transfers.
   </p>
 
   <h2>10. Children’s privacy</h2>
@@ -218,7 +291,8 @@
     digital consent)</strong>. We do not knowingly collect personal information from children. If you
     believe a child has provided us with personal information, please contact us at
     <a href="mailto:Noomiclonedev@gmail.com">Noomiclonedev@gmail.com</a> and we will take steps to
-    delete it.
+    delete it. If a child has signed in to the Game, you can also delete their game account, cloud
+    backup, and Unity account as described in Section 8.
   </p>
 
   <h2>11. Security</h2>
