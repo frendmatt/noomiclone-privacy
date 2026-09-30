@@ -34,7 +34,7 @@
 
   <h1>Privacy Policy for NoomiClone</h1>
   <p class="meta"><strong>Effective date:</strong> June 5, 2026</p>
-  <p class="meta"><strong>Last updated:</strong> September 28, 2026</p>
+  <p class="meta"><strong>Last updated:</strong> September 30, 2026</p>
 
   <p class="lead">
     This Privacy Policy explains how Matthew Jones (“we,” “us,” or “our”) collects, uses, and
@@ -76,7 +76,7 @@
 
   <h3>b) In-app purchase information</h3>
   <p>
-    If you buy an in-app product (for example, cosmetics, coins, or slow-motion), the purchase is
+    If you buy an in-app product (for example, NoomiCoins or Remove Ads), the purchase is
     processed by the <strong>Apple App Store</strong> or <strong>Google Play</strong> through
     Unity’s in-app purchasing service. We receive a purchase/transaction record confirming what was
     bought, but <strong>we do not receive or store your full payment-card details</strong> — those are
@@ -88,8 +88,8 @@
     Your settings and game progress are stored locally on your device (using the platform’s standard
     on-device storage). Your settings stay on your device and are not transmitted to us, whether or not
     you sign in. If you don’t sign in, your game progress also stays on your device and is not
-    transmitted to us. If you sign in, parts of your progress and your purchase records are also backed
-    up to Unity Cloud Save, as described in Section 2(d).
+    transmitted to us. If you sign in, your progress is also backed up to Unity Cloud Save, as
+    described in Section 2(d).
   </p>
 
   <h3>d) Optional sign-in and cloud backup</h3>
@@ -106,14 +106,17 @@
         “ja***@example.com”), stores only that masked form on your device, and never sends your email
         address anywhere.</li>
     <li><strong>What is backed up</strong> — Your regrabs, NoomiCoins balance, HQ replay credits, and
-        owned items and purchase records (including Remove Ads) are backed up to Unity Cloud Save under
-        your player ID.</li>
+        the items you bought with NoomiCoins are backed up to Unity Cloud Save under your player ID.
+        Purchases from the App Store or Google Play, such as Remove Ads, are not backed up: the store
+        restores them on your device.</li>
     <li><strong>What stays on your device</strong> — Your settings, equipped skins, button layout, and
         language are not backed up and stay on your device only. The masked email address and the time
         of your last backup also stay on your device only. Your player ID is stored on your device too
         (Unity also has it, because your backup is stored under it).</li>
-    <li><strong>Signing out</strong> — Signing out disconnects your account from the Game. It does not
-        delete your cloud backup, and your progress stays on your device.</li>
+    <li><strong>Signing out</strong> — Signing out backs up your progress one last time and then
+        removes it from your device. It stays in your cloud backup and comes back when you sign in
+        again. If the backup can’t be made (for example, when you’re offline), you stay signed in.
+        Purchases from the App Store or Google Play stay on your device.</li>
     <li><strong>Deleting your data</strong> — To delete your cloud backup or your Unity account, or to
         ask for a copy of your data, see Section 8.</li>
   </ul>
@@ -145,8 +148,8 @@
     <li>To display advertising, including, where permitted, personalized advertising, and to measure
         its effectiveness.</li>
     <li>To process and validate in-app purchases and prevent fraud.</li>
-    <li>If you choose to sign in, to back up your progress and purchase records so they are not lost
-        if you reinstall the Game.</li>
+    <li>If you choose to sign in, to back up your progress so it is not lost if you reinstall the Game
+        or change devices.</li>
     <li>To diagnose technical issues and crashes.</li>
     <li>To comply with legal obligations and enforce our terms.</li>
   </ul>
@@ -178,7 +181,7 @@
     <li><strong>Consent</strong> — for personalized advertising and use of advertising identifiers
         where consent is required. You may withdraw consent at any time.</li>
     <li><strong>Performance of a contract</strong> — to provide the Game, process your in-app
-        purchases, and, if you choose to sign in, back up your progress and purchase records.</li>
+        purchases, and, if you choose to sign in, back up your progress.</li>
     <li><strong>Legitimate interests</strong> — to operate, secure, and improve the Game, serve
         non-personalized ads, and prevent fraud, balanced against your rights.</li>
     <li><strong>Legal obligation</strong> — to comply with applicable law.</li>
@@ -208,8 +211,8 @@
         <td><a href="https://policies.google.com/privacy" rel="noopener" target="_blank">policies.google.com/privacy</a></td>
       </tr>
       <tr>
-        <td>Yandex (Yandex Ads / Yandex Mobile Ads)</td>
-        <td>Advertising</td>
+        <td>Yandex (Yandex Mobile Ads, including AppMetrica), on Android and iOS</td>
+        <td>Advertising, ad measurement and analytics</td>
         <td><a href="https://yandex.com/legal/confidential/" rel="noopener" target="_blank">yandex.com/legal/confidential</a></td>
       </tr>
       <tr>
@@ -219,6 +222,13 @@
       </tr>
     </tbody>
   </table>
+  <p>
+    The Yandex Mobile Ads SDK includes AppMetrica, Yandex’s measurement and analytics service. According
+    to Yandex, on iOS it collects your advertising identifier (only if you allow tracking, and then it
+    is used for tracking), purchase history, product interaction, crash and performance data, and other
+    diagnostic data, and uses them for advertising and analytics. It collects location only when an app
+    has location access, which the Game never asks for.
+  </p>
   <p>
     We may also disclose information if required by law, to enforce our terms, or to protect the
     rights, safety, and security of our users or others. We do not sell your personal information for
@@ -233,9 +243,9 @@
     you delete it or uninstall the Game.
   </p>
   <p>
-    If you sign in, your cloud backup is kept until you delete it or ask us to delete it (see
-    Section 8). Signing out or uninstalling the Game does not delete it, because its purpose is to keep
-    your progress if you reinstall the Game. Your Unity account, and the information Unity collects for
+    If you sign in, your cloud backup is kept until you delete your game account or ask us to delete
+    it (see Section 8). Signing out or uninstalling the Game does not delete it, because its purpose is
+    to keep your progress if you reinstall the Game or change devices. Your Unity account, and the information Unity collects for
     sign-in and cloud backup (see Section 2(d)), are kept according to Unity’s privacy policy.
   </p>
 
@@ -259,10 +269,8 @@
   <h3>Sign-in and cloud backup</h3>
   <p>If you signed in (see Section 2(d)):</p>
   <ul>
-    <li><strong>Deleting your game account</strong> — In the Game, go to Settings &gt; Account and tap
-        “Delete game account”. This deletes your cloud backup and the Game’s player record at Unity,
-        then signs you out. Your progress stays on your device. You can also ask us to delete them by
-        emailing <a href="mailto:Noomiclonedev@gmail.com">Noomiclonedev@gmail.com</a>.</li>
+    <li><strong>Deleting your game account</strong> — See
+        <a href="#delete-account">Deleting your NoomiClone account and data</a> below.</li>
     <li><strong>Getting a copy of your game data</strong> — To ask for a copy of your cloud backup or
         other information we hold about you, email us at
         <a href="mailto:Noomiclonedev@gmail.com">Noomiclonedev@gmail.com</a>.</li>
@@ -274,6 +282,34 @@
         data, or for any other request about your Unity account, email Unity at
         <a href="mailto:unity-player-login-privacy@unity3d.com">unity-player-login-privacy@unity3d.com</a>.</li>
   </ul>
+
+  <h3 id="delete-account">Deleting your NoomiClone account and data</h3>
+  <p>
+    This is how to delete the game account and cloud backup you created by signing in to NoomiClone
+    (developer: Matthew Jones). You don’t need to reinstall the Game to ask for deletion.
+  </p>
+  <ol>
+    <li><strong>In the Game</strong> — Go to Settings &gt; Account, tap “Delete game account”, then tap
+        again to confirm. This deletes your cloud backup and the Game’s player record at Unity, removes
+        your progress from your device, and signs you out.</li>
+    <li><strong>Without the Game</strong> — Email
+        <a href="mailto:Noomiclonedev@gmail.com?subject=Delete%20my%20NoomiClone%20account">Noomiclonedev@gmail.com</a>
+        with the subject “Delete my NoomiClone account” and your <strong>Player ID</strong>. The Game
+        shows it under Settings &gt; Account &gt; Player ID, with a Copy button. We can find your account
+        only by its Player ID, because we never receive or store your full email address. We delete your
+        game account and cloud backup within 30 days and reply to confirm.</li>
+    <li><strong>If you don’t have your Player ID</strong> — Delete your Unity account at
+        <a href="https://player-account.unity.com/delete-account" rel="noopener" target="_blank">player-account.unity.com/delete-account</a>.
+        After that, nobody can sign in to your game account again, and what is left of it (game progress
+        stored under a random player ID) is no longer connected to you or your email address.</li>
+  </ol>
+  <p>
+    <strong>What is deleted:</strong> your cloud backup (regrabs, NoomiCoins, HQ replay credits, and
+    items bought with NoomiCoins) and the Game’s player record at Unity.
+    <strong>What is kept:</strong> we keep nothing else about your game account. Your Unity account is
+    kept by Unity until you delete it on Unity’s page. Purchase records are kept by Apple or Google, and
+    advertising data by our advertising partners, under their own policies (see Section 6).
+  </p>
 
   <h2>9. International data transfers</h2>
   <p>
