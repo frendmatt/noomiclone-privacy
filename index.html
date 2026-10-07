@@ -106,12 +106,15 @@
         share your account’s email address; if it does, the Game shows it only in masked form (for
         example, “ja***@example.com”), stores only that masked form on your device, and never sends your
         email address anywhere.</li>
-    <li><strong>What is backed up</strong> — Your regrabs, NoomiCoins balance, HQ replay credits, and
-        the items you bought with NoomiCoins are backed up to Unity Cloud Save under your player ID.
+    <li><strong>What is backed up</strong> — Your regrabs, NoomiCoins balance, HQ replay credits,
+        the items you bought with NoomiCoins, the tutorial lessons you’ve finished, the number of daily
+        challenges you’ve completed, and the challenge rewards you’ve claimed are backed up to Unity Cloud
+        Save under your player ID.
         Purchases from the App Store or Google Play, such as Remove Ads, are not backed up: the store
         restores them on your device.</li>
-    <li><strong>What stays on your device</strong> — Your settings, equipped skins, button layout, and
-        language are not backed up and stay on your device only. The masked email address (if Unity
+    <li><strong>What stays on your device</strong> — Your settings, equipped skins and outfits, button
+        layout, language, and daily challenge progress (today’s challenge and which days you’ve claimed)
+        are not backed up and stay on your device only. The masked email address (if Unity
         shared one) and the time of your last backup also stay on your device only. Your player ID is stored on your device too
         (Unity also has it, because your backup is stored under it).</li>
     <li><strong>Signing out</strong> — Signing out backs up your progress one last time and then
@@ -143,6 +146,25 @@
     use only to respond to you.
   </p>
 
+  <h3>f) Checking today’s date</h3>
+  <p>
+    The Game’s daily challenges give a reward once a day. So that a device clock moved forward can’t
+    claim rewards early, the Game reads today’s date from a standard web request to one of these servers:
+    Google (<code>www.google.com</code>), Yandex (<code>yastatic.net</code>), or Unity
+    (<code>player-auth.services.api.unity.com</code>). It does this when the Game starts, about every half
+    hour while it is open, and when you come back to it.
+  </p>
+  <ul>
+    <li><strong>What is sent</strong> — The request contains no information about you or your game: no
+        player ID, advertising identifier, cookie, or progress. The Game reads only the date from the reply.</li>
+    <li><strong>What the server receives</strong> — As with any internet request, the server receives your
+        device’s IP address and basic technical details of the request (such as the name and version of
+        the software that made it). Google, Yandex, and Unity handle this under their own privacy
+        policies (see Section 6).</li>
+    <li><strong>What is stored</strong> — The last date the Game received is stored on your device only,
+        with your daily challenge progress.</li>
+  </ul>
+
   <h2>3. How we use information</h2>
   <ul>
     <li>To operate, maintain, and improve the Game and its performance.</li>
@@ -151,6 +173,7 @@
     <li>To process and validate in-app purchases and prevent fraud.</li>
     <li>If you choose to sign in, to back up your progress so it is not lost if you reinstall the Game
         or change devices.</li>
+    <li>To keep daily challenge rewards fair, by checking today’s date (see Section 2(f)).</li>
     <li>To diagnose technical issues and crashes.</li>
     <li>To comply with legal obligations and enforce our terms.</li>
   </ul>
@@ -200,7 +223,7 @@
     <tbody>
       <tr>
         <td>Unity Technologies (Unity LevelPlay / ironSource mediation, Unity Ads, Unity in-app purchasing, Unity Player Accounts, Unity Authentication, Unity Cloud Save)</td>
-        <td>Ad mediation, ad serving, purchase processing, optional sign-in and cloud backup</td>
+        <td>Ad mediation, ad serving, purchase processing, optional sign-in and cloud backup, today’s date (Section 2(f))</td>
         <td>
           <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener" target="_blank">unity.com</a>,
           <a href="https://www.is.com/privacy-policy/" rel="noopener" target="_blank">is.com (ironSource)</a>
@@ -208,12 +231,12 @@
       </tr>
       <tr>
         <td>Google (AdMob, Google Play services, User Messaging Platform)</td>
-        <td>Advertising, consent management, app distribution and purchases</td>
+        <td>Advertising, consent management, app distribution and purchases, today’s date (Section 2(f))</td>
         <td><a href="https://policies.google.com/privacy" rel="noopener" target="_blank">policies.google.com/privacy</a></td>
       </tr>
       <tr>
         <td>Yandex (Yandex Mobile Ads, including AppMetrica), on Android and iOS</td>
-        <td>Advertising, ad measurement and analytics</td>
+        <td>Advertising, ad measurement and analytics, today’s date (Section 2(f))</td>
         <td><a href="https://yandex.com/legal/confidential/" rel="noopener" target="_blank">yandex.com/legal/confidential</a></td>
       </tr>
       <tr>
